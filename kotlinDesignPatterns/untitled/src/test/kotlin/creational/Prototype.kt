@@ -1,3 +1,5 @@
+package creational
+
 import org.assertj.core.api.Assertions
 import org.junit.jupiter.api.Test
 
@@ -27,31 +29,31 @@ abstract class Shape : Cloneable {
 
 class Rectangle : Shape() {
     override fun draw() {
-        println("Inside Rectangle::draw() method.")
+        println("Inside creational.Rectangle::draw() method.")
     }
 
     init {
-        type = "Rectangle"
+        type = "creational.Rectangle"
     }
 }
 
 class Square : Shape() {
     override fun draw() {
-        println("Inside Square::draw() method.")
+        println("Inside creational.Square::draw() method.")
     }
 
     init {
-        type = "Square"
+        type = "creational.Square"
     }
 }
 
 class Circle : Shape() {
     override fun draw() {
-        println("Inside Circle::draw() method.")
+        println("Inside creational.Circle::draw() method.")
     }
 
     init {
-        type = "Circle"
+        type = "creational.Circle"
     }
 }
 
@@ -86,8 +88,8 @@ class PrototypeTest {
         clonedShape2.draw()
         clonedShape3.draw()
 
-        Assertions.assertThat(clonedShape1.type).isEqualTo("Circle")
-        Assertions.assertThat(clonedShape2.type).isEqualTo("Square")
-        Assertions.assertThat(clonedShape3.type).isEqualTo("Rectangle")
+        Assertions.assertThat(clonedShape1.type).isEqualTo("creational.Circle")
+        Assertions.assertThat(clonedShape2.type).isEqualTo("creational.Square")
+        Assertions.assertThat(clonedShape3.type).isEqualTo("creational.Rectangle")
     }
 }

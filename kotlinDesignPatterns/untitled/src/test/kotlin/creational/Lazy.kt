@@ -1,3 +1,5 @@
+package creational
+
 import org.assertj.core.api.Assertions
 import org.junit.jupiter.api.Test
 
@@ -13,7 +15,7 @@ class AlertBox {
     var message: String? = null
 
     fun show() {
-        println("AlertBox $this: $message")
+        println("creational.AlertBox $this: $message")
     }
 }
 

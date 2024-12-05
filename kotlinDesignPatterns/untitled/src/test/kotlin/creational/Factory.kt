@@ -1,3 +1,5 @@
+package creational
+
 import org.assertj.core.api.Assertions
 import org.junit.jupiter.api.Test
 
@@ -14,7 +16,7 @@ object Spain : Country()
 class Greece(val someProperty: String) : Country()
 data class USA(val someProperty: String) : Country()
 
-//class Poland: Country()
+//class Poland: creational.Country()
 
 class Currency(val code: String)
 
@@ -35,7 +37,7 @@ class FactoryMethodTest {
         println("Greek currency: $greekCurrency")
 
         val usaCurrency = CurrencyFactory.currencyForCountry(USA("")).code
-        println("USA currency: $usaCurrency")
+        println("creational.USA currency: $usaCurrency")
 
         Assertions.assertThat(greekCurrency).isEqualTo("EUR")
         Assertions.assertThat(usaCurrency).isEqualTo("USD")
