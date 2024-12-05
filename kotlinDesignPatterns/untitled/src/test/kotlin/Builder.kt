@@ -1,6 +1,13 @@
 import org.assertj.core.api.Assertions
 import org.junit.jupiter.api.Test
 
+/*
+
+we have multiple parameters to initiate
+
+ */
+
+
 class Component private constructor(builder: Builder) {
     var param1: String? = null
     var param2: Int? = null

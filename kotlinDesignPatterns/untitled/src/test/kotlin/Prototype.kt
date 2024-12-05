@@ -1,6 +1,13 @@
 import org.assertj.core.api.Assertions
 import org.junit.jupiter.api.Test
 
+
+/*
+
+copy existing objects
+the object have copy methods
+
+ */
 abstract class Shape : Cloneable {
     var id: String? = null
     var type: String? = null

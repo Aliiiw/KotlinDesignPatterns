@@ -7,6 +7,12 @@ class DatabaseDataSource : DataSource
 
 class NetworkDataSource : DataSource
 
+/*
+
+access without caring about implementation
+
+ */
+
 abstract class DataSourceFactory {
     abstract fun makeDataSource(): DataSource
 

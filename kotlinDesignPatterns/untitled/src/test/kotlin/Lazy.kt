@@ -1,6 +1,14 @@
 import org.assertj.core.api.Assertions
 import org.junit.jupiter.api.Test
 
+
+/*
+
+for memory management
+
+ */
+
+
 class AlertBox {
     var message: String? = null
 

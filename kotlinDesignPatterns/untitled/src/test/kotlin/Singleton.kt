@@ -1,6 +1,12 @@
 import org.assertj.core.api.Assertions
 import org.junit.jupiter.api.Test
 
+/*
+
+only one instance
+single point of access (network manager, database , ...
+
+ */
 object NetworkDriver {
     init {
         println("init $this")

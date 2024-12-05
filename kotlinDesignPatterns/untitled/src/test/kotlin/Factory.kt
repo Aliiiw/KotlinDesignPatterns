@@ -1,6 +1,11 @@
 import org.assertj.core.api.Assertions
 import org.junit.jupiter.api.Test
 
+/*
+
+access functionality without carrying about implementation
+
+ */
 sealed class Country {
     object Canada : Country()
 }
